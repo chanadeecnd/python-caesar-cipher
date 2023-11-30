@@ -1,4 +1,6 @@
 import string
+from logo import logo
+print(logo)
 alphabet = list(string.ascii_lowercase)
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
@@ -31,4 +33,4 @@ def caesarCipher(text, shift, direction):
     return result_message, message
 
 result,message = caesarCipher(text, shift, direction)
-print(message, result)
+print(message)
